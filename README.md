@@ -3,9 +3,7 @@
 This project is a simple Todo application built using Redux Toolkit. It allows users to add new tasks, edit existing tasks, and delete tasks. The application is built with React, TypeScript, and Material-UI (MUI) for styling and components.
 Features
 
-![Demo](/todo.gif)
-
-
+![Demo](/images/todo.gif)
 
     Add New Todo: Users can add a new todo by typing their task into an input field and clicking the "Create" button.
 
