@@ -1,5 +1,5 @@
 export interface TodoInitialState{
-    todos:[]
+    todos:TodoType[]
 }
 
 export interface TodoType{
