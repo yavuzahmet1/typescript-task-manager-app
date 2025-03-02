@@ -3,21 +3,9 @@
 This project is a simple Todo application built using Redux Toolkit. It allows users to add new tasks, edit existing tasks, and delete tasks. The application is built with React, TypeScript, and Material-UI (MUI) for styling and components.
 Features
 
-![Demo](/images/todo-list.png)
+![Demo](/todo.gif)
 
-``
-src/
-├── components/
-│   ├── TodoCreate.tsx       # Component for creating new todos
-│   ├── TodoList.tsx         # Component for listing todos
-│   ├── Todo.tsx             # Component for displaying and editing a single todo
-├── redux/
-│   ├── store.ts             # Redux store configuration
-│   ├── todoSlice.ts         # Redux slice for todos (state and reducers)
-├── types/
-│   ├── Types.ts             # TypeScript types for the application
-├── App.tsx                  # Main application component
-├── index.tsx                # Entry point of the application
+
 
     Add New Todo: Users can add a new todo by typing their task into an input field and clicking the "Create" button.
 
