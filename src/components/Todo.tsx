@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import { Input } from '@mui/joy';
 
 interface TodoProps {
-    todoProps: TodoType
+    todo: TodoType
 }
 
 const Todo = ({todo}:TodoProps) => {
