@@ -1,14 +1,12 @@
 import DeleteIcon from '@mui/icons-material/Delete';
-
 import CheckIcon from '@mui/icons-material/Check';
-
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import { TodoType } from '../types/Types';
 import { useDispatch } from 'react-redux';
 import { removeTodoById } from '../redux/todoSlice';
 
-interface TodoProps{
-  todo:TodoType;
+interface TodoProps {
+    todoProps: TodoType
 }
 
 const Todo = ({todo}:TodoProps) => {
