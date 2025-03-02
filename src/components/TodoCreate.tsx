@@ -1,4 +1,4 @@
-import {Input,Button} from '@mui/joy/';
+import {Input,Button, Typography} from '@mui/joy/';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createTodo } from '../redux/todoSlice';
@@ -27,10 +27,23 @@ const TodoCreate = () => {
    }
   return (
     <div  className="todo-create" >
+<Typography
+fontSize={30}
+  sx={{
+    fontWeight: 'bold',
+    color: 'blue',
+    textAlign: 'center',
+    marginBottom:"1rem"
+  }}
+>
+ BASIC TODO PROJECT
+</Typography>
+
+
       <Input 
       sx={{ width: '500px' }} 
       size="lg" 
-      placeholder="Type in here…" 
+      placeholder="Enter todo..." 
       variant="solid"
       value={newTodo} 
       onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setNewTodo(e.target.value)}/>
