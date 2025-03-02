@@ -17,6 +17,7 @@ const [newTodo,setNewTodo]=useState<string>("")
         content:newTodo
     }
     dispatch(createTodo(payload))
+    
    }
   return (
     <div  className="todo-create" >

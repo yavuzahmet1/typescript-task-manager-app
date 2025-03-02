@@ -3,11 +3,17 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import CheckIcon from '@mui/icons-material/Check';
 
 import EditNoteIcon from '@mui/icons-material/EditNote';
+import { TodoType } from '../types/Types';
 
-const Todo = () => {
+interface TodoProps{
+  todo:TodoType;
+}
+
+const Todo = ({todo}:TodoProps) => {
+  const {id,content}=todo;
   return (
-    <div style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between", border:"1px solid orange", padding:"1rem", marginTop:"1.5rem", borderRadius:"10px"}}>
-        <div>Todo</div>
+    <div style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between", border:"1px solid orange", padding:"0.5rem", marginTop:"1.5rem", borderRadius:"10px"}}>
+        <div>{content}</div>
         <div>
 <DeleteIcon style={{fontSize:"2rem", cursor:"pointer"}} />
 <EditNoteIcon style={{fontSize:"2rem", cursor:"pointer"}}/>
